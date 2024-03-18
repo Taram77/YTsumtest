@@ -3,40 +3,20 @@
 def summarization_2(text, language):
     prompt = [{"role": "user",
       "content": f"please translate the summarization to {language} language"
-                 "Your output should use the following template:"
-                 "### Summary"
-                 "### Analogy"
-                 "### Notes"
-                 "- [Emoji] Bulletpoint"
-                 "### Keywords"
-                 "- Explanation"
-                 "You have been tasked with creating a concise summary of a YouTube video using its transcription."
-                 "Make a summary of the transcript."
-                 "Additionally make a short complex analogy to give context and/or analogy from day-to-day life from the transcript."
-                 "Create 10 bullet points (each with an appropriate emoji) that summarize the key points or important moments from the video's transcription."
-                 "In addition to the bullet points, extract the most important keywords and any complex words not known to the average reader aswell as any acronyms mentioned."
-                 " For each keyword and complex word, provide an explanation and definition based on its occurrence in the transcription."
-                 f"Please ensure that the summary, bullet points, and explanations fit within the 330-word limit, while still offering a comprehensive and clear understanding of the video's content."
+                 "1.	Write a comprehensive summary of the text. Structure the summary to follow the overall flow of the text. For each major section, summarize the key points, theories, models, frameworks, examples, and insights covered. 
+                 Where relevant, provide concrete examples to illustrate the concepts. Summarize any case studies or experiments described in the text. For important terms or theories introduced, explain them clearly and concisely. 
+                 Where appropriate, make connections between ideas presented across different chapters or sections. The tone should be professional, neutral and educational. 
+                 The length should allow all major aspects of the text to be summarized effectively. The summary should be written to help someone understand the core content of the text in depth."
                  f" Use the text above: {text}."}]
     return prompt
 
 def summarization_3(text, language):
     prompt = [{"role": "user",
       "content": f"please translate the summarization to {language} language"
-                 "Your output should use the following template:"
-                 "### Summary"
-                 "### Analogy"
-                 "### Notes"
-                 "- [Emoji] Bulletpoint"
-                 "### Keywords"
-                 "- Explanation"
-                 "You have been tasked with creating a concise summary of a YouTube video using its transcription."
-                 "Make a summary of the transcript."
-                 "Additionally make a short complex analogy to give context and/or analogy from day-to-day life from the transcript."
-                 "Create 10 bullet points (each with an appropriate emoji) that summarize the key points or important moments from the video's transcription."
-                 "In addition to the bullet points, extract the most important keywords and any complex words not known to the average reader aswell as any acronyms mentioned."
-                 " For each keyword and complex word, provide an explanation and definition based on its occurrence in the transcription."
-                 f"Please ensure that the summary, bullet points, and explanations fit within the 330-word limit, while still offering a comprehensive and clear understanding of the video's content."
+                "1.	Write a comprehensive summary of the text. Structure the summary to follow the overall flow of the text. For each major section, summarize the key points, theories, models, frameworks, examples, and insights covered. 
+                 Where relevant, provide concrete examples to illustrate the concepts. Summarize any case studies or experiments described in the text. For important terms or theories introduced, explain them clearly and concisely. 
+                 Where appropriate, make connections between ideas presented across different chapters or sections. The tone should be professional, neutral and educational. 
+                 The length should allow all major aspects of the text to be summarized effectively. The summary should be written to help someone understand the core content of the text in depth."
                  f" Use the text above: {text}."}]
     return prompt
 
